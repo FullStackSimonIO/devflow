@@ -1,10 +1,16 @@
-import { UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { Sign } from "crypto";
 import React from "react";
 
 const page = () => {
   return (
     <div>
-      <UserButton afterSwitchSessionUrl="/" />
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
     </div>
   );
 };
