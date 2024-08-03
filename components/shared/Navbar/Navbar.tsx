@@ -2,8 +2,9 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Theme from "./Theme";
 //import Theme from "./Theme";
-//import MobileNav from "./MobileNav";
+import MobileNavbar from "./MobileNavbar";
 //import GlobalSearch from "../search/GlobalSearch";
 
 const Navbar = () => {
@@ -23,14 +24,14 @@ const Navbar = () => {
       </Link>
       GlobalSearch
       <div className="flex-between gap-5">
-        Theme
+        <Theme />
         <SignedIn>
           <UserButton />
         </SignedIn>
         <SignedOut>
           <SignInButton />
         </SignedOut>
-        MobileNav
+        <MobileNavbar />
       </div>
     </nav>
   );

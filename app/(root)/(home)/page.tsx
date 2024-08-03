@@ -3,16 +3,7 @@ import { Sign } from "crypto";
 import React from "react";
 
 const page = () => {
-  return (
-    <div>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-      <SignedOut>
-        <SignInButton />
-      </SignedOut>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default page;
