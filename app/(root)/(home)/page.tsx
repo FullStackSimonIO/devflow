@@ -22,7 +22,7 @@ const questions = [
       picture: "john-doe.jpg",
     },
     upvotes: 10,
-    views: 100,
+    views: 1000000000,
     answers: [],
     createdAt: new Date("2021-09-01T12:00:00.000Z"),
   },

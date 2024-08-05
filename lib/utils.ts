@@ -1,6 +1,21 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+export const formatLargeNumber = (number: number): string => {
+  if (number >= 1_000_000_000) {
+    const billions = (number / 1_000_000_000).toFixed(1);
+    return `${billions}B`;
+  } else if (number >= 1_000_000) {
+    const millions = (number / 1_000_000).toFixed(1);
+    return `${millions}M`;
+  } else if (number >= 1_000) {
+    const thousands = (number / 1_000).toFixed(1);
+    return `${thousands}K`;
+  } else {
+    return number.toString();
+  }
+};
+
 export const getTimestamp = (createdAt: Date): string => {
   const now = new Date();
   const diffInSeconds = Math.floor(
