@@ -6,34 +6,34 @@ import RenderTag from "./RenderTag";
 const RightSidebar = () => {
   const hotQuestions = [
     {
-      _id: 1,
+      _id: "1",
       title: "How do I use express as a custom server in NextJS?",
     },
     {
-      _id: 2,
+      _id: "2",
       title: "Cascading Deletes in SQLAlchemy",
     },
     {
-      _id: 3,
+      _id: "3",
       title: "How to perfectly center a div with TailwindCSS",
     },
     {
-      _id: 4,
+      _id: "4",
       title:
         "Best practices for Data fetching in a Next.js application with Server-Side Rendering",
     },
     {
-      _id: 5,
+      _id: "5",
       title: "Redux Toolkit not updating state as expected.",
     },
   ];
 
   const popularTags = [
-    { _id: 1, name: "javascript", totalQuestions: 5 },
-    { _id: 2, name: "react", totalQuestions: 5 },
-    { _id: 3, name: "next", totalQuestions: 5 },
-    { _id: 4, name: "vue", totalQuestions: 5 },
-    { _id: 5, name: "redux", totalQuestions: 5 },
+    { _id: "1", name: "javascript", totalQuestions: 5 },
+    { _id: "2", name: "react", totalQuestions: 5 },
+    { _id: "3", name: "next", totalQuestions: 5 },
+    { _id: "4", name: "vue", totalQuestions: 5 },
+    { _id: "5", name: "redux", totalQuestions: 5 },
   ];
 
   return (
